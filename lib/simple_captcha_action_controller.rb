@@ -4,7 +4,7 @@ module SimpleCaptcha #:nodoc
   module ControllerHelpers #:nodoc
     
     include ConfigTasks
-    
+        
     # This method is to validate the simple captcha in controller.
     # It means when the captcha is controller based i.e. :object has not been passed to the method show_simple_captcha.
     #
@@ -29,6 +29,8 @@ module SimpleCaptcha #:nodoc
         return false
       end
     end
+    
+    protected :simple_captcha_valid?
     
   end
 end
